@@ -1,0 +1,70 @@
+* { padding: 0; margin: 0; }
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 13px;
+}
+#wrapper { 
+ margin: 0 auto;
+ width: 922px;
+}
+#header {
+ width: 900px;
+ color: #ffffff;
+ padding: 10px;
+ border: 1px solid #ccc;
+ height: 60px;
+ margin: 10px 0px 5px 0px;
+ background: #ffffff;
+  border-style: groove;
+}
+#content { 
+ width: 900px;
+ color: #333;
+ border: 1px solid #ccc;
+ background: #eeeeee;
+ margin: 0px 0px 10px 0px;
+ padding: 10px;
+ border-style: groove;
+}
+#banner { 
+ width: 900px;
+ margin: 0px 0px 10px 0px;
+ padding: 10px;
+}
+#banner H1 { 
+ text-align: center;
+
+}
+#onlinevitals h1{ 
+text-align: center;
+font-size: 2em;
+font-weight:bold;
+color: maroon;
+
+}
+#onlinevitals { 
+text-align: center;
+font-size: 1em;
+
+}
+#onlinevitals legend { 
+text-align: center;
+  padding: 0.2em 0.5em;
+  border:1px solid navy;
+  color:navy;
+  font-size:75%;
+
+}
+fieldset { 
+border:2px solid #333333;
+ 
+}
+legend { 
+text-align: center;
+  padding: 0.2em 0.5em;
+  border:1px solid navy;
+  color:navy;
+  font-size:80%;
+
+}

@@ -1,0 +1,38 @@
+Labtech Vitals Dashboard
+Description: A dashboard to be used during Control Center loading as a splash page quick view of the state of the customer base.
+
+By:Squidworks Inc  (http://www.squidworks.net)
+Dev: Shannon Anderson
+Date: 9/29/2013
+Email: sanderson@squidworks.net
+
+
+Installation:
+
+Copy the contents from the downloaded zip file to a new directory called SWVDB in the webroot of the default web on your Labtech server.
+	This should normally be C:\inetpub\wwwroot\SWVDB\ on most Windows IIS web servers.
+	
+Next You will need to download and install PHP on your windows IIS server. The easiest method is to download the PHP 5.3.27 installer
+which will do all the work for you making it really easy to just go. But if you are the IIS guru and want to do a manual level install
+of the latest and greatest then you will need to follow along with php.net	PHP.net says that for IIS servers using the Non Thread Safe 
+versions of PHP are suggested and the MySQL plugin must be installed if the above installer is not used.
+
+Now that we have PHP installed and hopefully working we need to modify the header.php file. We will be adding a LT user account that has 
+basic access to reading the MySQL database. Open the Header.php file with notepad or any basic text editor and the first few rows with be 
+the database user, password, server address and database name.  Change these to reflect your account information. Save the file and you 
+should now be ready to go.
+
+
+Browse http://your.LT.server.address/SWVDB/ and verify that the page displays
+
+Now to integrate into your Labtech console, open the [Dashboard] -> [Config] -> ControlCenter Tab under System Options column 
+find Initial URL text box and add the above URL there and save the config. This will cause this page to load in the console when you login.
+
+The Squidworks Vitals Dashboard uses the data from the LT HitmanPro Plugin available at the LT market place. Download and install the plugin.
+
+Then under the newly created hitmanpro group make sure you have systems in group and run the free scan to get data to populate.
+
+
+
+Enjoy!
+Shannon Anderson.
